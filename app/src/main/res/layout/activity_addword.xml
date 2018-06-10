@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.wordbook.addword">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="3"
+                android:text="word"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text=""
+                android:id="@+id/wordtext"/>
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="3"
+                android:text="meaning"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text=""
+                android:id="@+id/meaningtext"/>
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="3"
+                android:text="sample"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:text=""
+                android:id="@+id/sampletext"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/yesbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确定添加" />
+
+
+
+        <Button
+            android:id="@+id/iselectbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="网络查找" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
